@@ -1,0 +1,24 @@
+{% extends '../base.html' %}
+
+
+{% block page_title %}
+    HOME | TCH_2
+{% endblock page_title %}
+    
+
+{% block contents %}
+
+    <h1>Hello </h1>
+
+    
+    {% for s in stu_list%}
+        <ul>
+            <li>{{s.stu_name}}</li>
+            <li>{{s.grade}}</li>
+            <li>{{s.school}}</li>
+        </ul>
+    {% endfor %}
+        
+
+{% endblock contents %}
+    
